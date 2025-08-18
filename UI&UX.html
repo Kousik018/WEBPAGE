@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/kousik.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI&amp;UX</title>
+    <link rel="stylesheet" href="./UI&amp;UX_files/style.css">
+<style>
+    body {
+
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+
+    .navbar {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 60px;
+        background-color: #1f1f1f;
+        
+    }
+
+    .logo {
+        content: bold;
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .nav-links a {
+        color: white;
+        font-weight: 500;
+    }
+
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(135deg, #3b82f6, #9333ea);
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 300px;
+    }
+
+    .cta-button {
+        background-color: #fbbf24;
+        color: #1f1f1f;
+        padding-left: auto;
+        border-radius: 5px;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+
+    @media only screen and (max-width:550px){
+
+        .navbar{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+</style></head>
+
+
+
+
+
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="http://127.0.0.1:5500/"><img src="./UI&amp;UX_files/ui-and-ux.jpg" width="200px" height="100px"></a> </div>
+        <nav class="nav-links">
+            <a href="http://127.0.0.1:5500/kousik.html#">Home</a>
+            <a href="http://127.0.0.1:5500/kousik.html#">Services</a>
+            <a href="http://127.0.0.1:5500/kousik.html#">About</a>
+            <a href="http://127.0.0.1:5500/kousik.html#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Elevate Your Web Experience</h1>
+        <p>Create modern, fast, and responsive websites with ease.</p>
+        <a href="http://127.0.0.1:5500/kousik.html#" class="cta-button">Explore Services</a>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
