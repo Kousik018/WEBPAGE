@@ -2,99 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI&UX</title>
-    <link rel="stylesheet" href="style.css" />
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>UI&UX</title>
+   <link rel="stylesheet" href="style.css" />
 </head>
 
 <style>
-    body {
+   body {
 
-        font-family: 'Times New Roman', Times, serif;
-        
-    }
+      font-family: 'Times New Roman', Times, serif;
 
-    .navbar {
+   }
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 60px;
-        background-color: #1f1f1f;
-        
-    }
+   .navbar {
 
-    .logo {
-        content: bold;
-        display: flex;
-        justify-content: start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 60px;
+      background-color: #1f1f1f;
 
-    }
+   }
 
-    .nav-links a {
-        color: white;
-        font-weight: 500;
-    }
+   div.logo {
+      font-size: 30px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+   }
 
+   .nav-links ul li a:hover {
+      background-color: #fbbf24;
+      color: #1f1f1f;
+   }
 
-
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(135deg, #3b82f6, #9333ea);
-    }
-
-    .hero h1 {
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        font-size: 20px;
-        margin-bottom: 300px;
-    }
-
-    .cta-button {
-        background-color: #fbbf24;
-        color: #1f1f1f;
-        padding-left: auto;
-        border-radius: 5px;
-        font-weight: 600;
-        box-sizing: border-box;
-    }
+   .nav-links ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      text-transform: uppercase;
 
 
-    @media only screen and (max-width:550px){
+   }
 
-        .navbar{
-            display: flex;
-            flex-direction: column;
-        }
-    }
+   .nav-links ul li a {
+      color: white;
+      text-decoration: underline;
+      font-weight: 500;
+   }
 
+
+   .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+      padding: 10px;
+   }
+
+   .hero h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+   }
+
+   .hero p {
+      font-size: 20px;
+      margin-bottom: 100px;
+   }
+
+
+   .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+      background-color: dodgerblue;
+      padding: 10px;
+   }
+
+
+   .cta-button {
+      background-color: #fbbf24;
+      color: #1f1f1f;
+      padding-left: auto;
+      border-radius: 5px;
+      font-weight: 600;
+      box-sizing: border-box;
+   }
+
+
+   @media only screen and (max-width: 780px) {
+      .navbar {
+         flex-direction: column;
+         padding: 20px;
+      }
+
+      .nav-links ul {
+         flex-direction: column;
+         gap: 10px;
+         align-items: center;
+      }
+
+   .grid-container {
+      grid-template-columns: 1fr;
+   }
+
+
+   }
 </style>
 
 
 
 <body>
-    <header class="navbar">
-        <div class="logo"><a href="/"><img src="ui-and-ux.jpg" width="200px" height="100px" /></a> </div>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+   <header class="navbar">
+      <div class="logo"><a href="/"><img src="ui-and-ux.jpg" width="150px" height="50px" /></a> </div>
+      <nav class="nav-links">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
 
-    <div class="hero">
-        <h1>Elevate Your Web Experience</h1>
-        <p>Create modern, fast, and responsive websites with ease.</p>
-        <a href="#" class="cta-button">Explore Services</a>
-    </div>
+   <div class="hero">
+      <h1>Elevate Your Web Experience</h1>
+      <p>Create modern, fast, and responsive websites with ease.
+         Starting a career in UI/UX design is exciting and full of opportunities. If you’re attracted to combining
+         creativity with practical skills, this might be the path for you. Begin by learning the basics of good
+         design and what makes an app or website user-friendly. Consider taking a course or joining a design boot
+         camp to get a solid foundation quickly. Practice what you’ve learned by working on your projects or
+         internships, and put together a portfolio to show off your work. Get comfortable with popular design tools
+         like Adobe XD, Sketch, and Figma, and don’t forget to connect with other designers online or in person—it's
+         a great way to learn more and find new opportunities.
+      </p>
+
+      <div class="grid-container">
+         <div class="item1">
+            <h3>UI Design</h3>
+            <p>Create visually appealing interfaces that engage users and reflect your brand.</p>
+         </div>
+         <div class="item2">
+            <h3>UX Research</h3>
+            <p>Understand user needs through research, surveys, and usability testing.</p>
+         </div>
+         <div class="item3">
+            <h3>Prototyping</h3>
+            <p>Build interactive prototypes to test ideas and iterate quickly with user feedback.</p>
+         </div>
+      </div>
+
+
+
+      <a href="#" class="cta-button">Explore Services</a>
+   </div>
 </body>
 
 </html>
